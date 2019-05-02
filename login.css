@@ -1,0 +1,70 @@
+body{
+	background-image: url(nicole-honeywill-1219127-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*position: absolute;*/
+	bottom: 100px;
+    left: 50px;
+}
+.box{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	width:400px;
+	padding: 40px;
+	/*border: 1px solid rgba(0,0,0,0.1);*/
+	background: rgba(0,0,0,0.1);
+	border-radius: 25px;
+	padding-bottom: 20px;
+}
+.box h2
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 40px;
+     font-size: 30px;
+     color: brown;
+	font-family:'Fredericka the Great', cursive;
+}
+.box input
+{
+	background:transparent;
+	padding: 10px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	color: brown;
+	border-bottom: 1px solid brown;
+}
+.box input[type="submit"]
+{
+	border: none;
+	cursor: pointer;
+	margin-bottom: 0;
+	background: rgba(0,0,0,0.3);
+	font-family: 'Ribeye Marrow', cursive;
+	font-size: 16px;
+}
+.box form div
+{
+	position: relative;
+}
+
+.box form div label
+{
+	position: absolute;
+	top:10px;
+	left: 0;
+	transition: .5s;
+	pointer-events: none;
+	color: brown;
+}
+.box input:focus ~ label,.box input:valid ~ label{
+	top:-12px;
+	left: 0;
+}
